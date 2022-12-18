@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting started with Implementation Facility Manager
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -6,41 +6,48 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `yarn test`
+Starts unit tests
 
-### `npm test`
+### Plop scripts
+We added plop for generating base structure for ui, components, pages\
+Script `yarn gec` for component, `yarn geui` for ui, `yarn gep` for page components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Storybook [about storybook](http://localhost:3000)
+`yarn storybook`\
+Storybook we use for building isolated components\
+**NOW IS DEPRECATED BECAUSE OF RTK QUERY**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup project
+Install nvm \
+Run `nvm use` to get current version of node \
+Install yarn globally `npm install -g yarn` \
+Install packages `yarn install` \
+Configure [eslint](https://www.jetbrains.com/help/webstorm/eslint.html#ws_js_eslint_activate) and [prettier](https://www.jetbrains.com/help/webstorm/prettier.html)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Husky
+Our project use git hooks [husky](https://typicode.github.io/husky/#/) for commit, push \
+Every time you commit husky will run eslint for checking errors, and test when you push your changes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Branches
 
-### `npm run eject`
+Our *master* branch is similar to a *master* branch in many places.
+The *master* branch should be always ready to deploy to *production*, so only reviewed, accepted and tested changes should be pushed to *master*.
+New changes can only come from merging from *staging*
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Our *staging* branch is similar to a *staging* branch in many places.
+The *staging* branch should be always ready to deploy to *staging*, so only reviewed, accepted and tested changes
+should be pushed to *staging*.
+All new feature should come to *staging*
+You can't push to *staging* directly, only by creating branch from them
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Branches Naming
+The branch template is: `Ticket prefix + number`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+For example, `LIM-344`.
