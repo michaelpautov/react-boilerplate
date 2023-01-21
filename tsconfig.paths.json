@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@fa/i18n": ["src/i18n"],
+      "@fa/components": ["src/components/index", "src/components/*"],
+      "@fa/components/*": ["src/components/*"],
+      "@fa/style": ["src/style/index", "src/style/*"],
+      "@fa/style/*": ["src/style/*"],
+      "@fa/hooks": ["src/hooks/index", "src/hooks/*"],
+      "@fa/hooks/*": ["src/hooks/*"],
+      "@fa/types": ["src/types/index", "src/types/*"],
+      "@fa/types/*": ["src/types/*"],
+      "@fa/utils": ["src/utils/index", "src/utils/*"],
+      "@fa/utils/*": ["src/utils/*"],
+      "@fa/constants": ["src/constants/index", "src/constants/*"],
+      "@fa/constants/*": ["src/constants/*"],
+      "@fa/pages": ["src/pages/index", "src/pages/*"],
+      "@fa/pages/*": ["src/pages/*"],
+      "@fa/themes": ["src/themes/index", "src/themes/*"],
+      "@fa/themes/*": ["src/themes/*"],
+      "@fa/store": ["src/store/index", "src/store/*"],
+      "@fa/store/*": ["src/store/*"],
+      "@fa/api": ["src/api/index", "src/api/*"],
+      "@fa/api/*": ["src/api/*"],
+      "@fa/ui": ["src/ui/index", "src/ui/*"],
+      "@fa/ui/*": ["src/ui/*"],
+      "@fa/form-schemas": ["src/form-schemas/index", "src/form-schemas/*"],
+      "@fa/form-schemas/*": ["src/form-schemas/*"]
+    }
+  }
+}

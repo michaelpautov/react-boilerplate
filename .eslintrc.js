@@ -130,6 +130,8 @@ module.exports = {
     'no-multiple-empty-lines': 'error',
     'no-trailing-spaces': 'error',
     'no-whitespace-before-property': 'error',
+    'no-unsafe-assignment': 0,
+    'no-unsafe-member-access': 0,
     // END: Common Eslint Rules Layout & Formatting
     // START: React Rules
     'react/button-has-type': 'error',
@@ -141,7 +143,6 @@ module.exports = {
     'react/jsx-closing-tag-location': 'error',
     'react/jsx-no-useless-fragment': 'error',
     'react/jsx-pascal-case': 'error',
-    'react/jsx-space-before-closing': 'error',
     'react/jsx-wrap-multilines': [
       2,
       {
@@ -205,7 +206,6 @@ module.exports = {
     '@typescript-eslint/unified-signatures': 'error',
     '@typescript-eslint/default-param-last': 'error',
     '@typescript-eslint/no-non-null-assertion': 'off',
-
     // END: Typescript Rules
   },
 }

@@ -1,4 +1,4 @@
-# Getting started with Implementation Facility Manager
+# Getting started with React Boilerplate
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -28,7 +28,7 @@ Storybook we use for building isolated components\
 Install nvm \
 Run `nvm use` to get current version of node \
 Install yarn globally `npm install -g yarn` \
-Install packages `yarn install` \
+Install packages `yarn` \
 Configure [eslint](https://www.jetbrains.com/help/webstorm/eslint.html#ws_js_eslint_activate) and [prettier](https://www.jetbrains.com/help/webstorm/prettier.html)
 
 ## Husky
@@ -50,4 +50,4 @@ You can't push to *staging* directly, only by creating branch from them
 ## Branches Naming
 The branch template is: `Ticket prefix + number`
 
-For example, `LIM-344`.
+For example, `RC-344`.
